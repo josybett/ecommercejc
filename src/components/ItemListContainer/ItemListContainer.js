@@ -1,9 +1,7 @@
 import ItemCard from "../ItemCard/ItemCard"
-import limon from "./asset/limon.jpeg"
-import onguard from "./asset/onguard.jpeg"
-import zen from "./asset/zen.jpeg"
+import { useNavigate } from 'react-router-dom';
 
-const ItemListConatainer = ({ greeting }) => {
+const ItemListConatainer = ({ greeting, data }) => {
     return (
         <div>
             <section className="hero is-info">
@@ -12,18 +10,16 @@ const ItemListConatainer = ({ greeting }) => {
                 </div>
             </section>
             
-            <div className="containe">
+            <div className="containe is-fluid">
                 <div className="section">
-                    <div className="columns">
-                        <div className="column is-4">
-                            <ItemCard titulo="Aceites Indivuduales" summary="Aceites escenciales puros, sólo un ingrediente" img={limon} />
-                        </div>
-                        <div className="column is-4">
-                            <ItemCard titulo="Mezcla de Aceites" summary="Mezcla de aceites enfocados para un propósito" img={zen} />
-                        </div>
-                        <div className="column is-4">
-                            <ItemCard titulo="OnGuard" summary="Mezcla de aceite que apoya al sistema inmunológico" img={onguard} />
-                        </div>
+                    <div className="columns wraps">
+                        {data.map(
+                            producto => (
+                                <div className="column is-4" key={producto.id}>
+                                    <ItemCard id={producto.id} titulo={producto.titulo} summary={producto.descripcion} img={producto.img} price={producto.precio} />
+                                </div>
+                            )
+                        )}
                     </div>
                 </div>
             </div>

@@ -2,3 +2,27 @@
     width: auto;
     height: 200px
 }
+
+.item-count-number {
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.zero-bottom {
+    margin-bottom: 0px;
+}
+
+.count-container {
+    margin-top: 10px;
+}
+
+.wraps {
+    flex-wrap: wrap;
+}
+
+.amount {
+    font-weight: bold;
+    margin: auto;
+}
