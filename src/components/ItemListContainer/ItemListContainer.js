@@ -1,5 +1,4 @@
 import ItemCard from "../ItemCard/ItemCard"
-import { useNavigate } from 'react-router-dom';
 
 const ItemListConatainer = ({ greeting, data }) => {
     return (

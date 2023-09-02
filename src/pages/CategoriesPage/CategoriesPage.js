@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 
-import { getProductsByCategory } from "../../asyncMock"
+import { getProductsByCategory } from "../../services/firebase"
 import ItemListConatainer from "../../components/ItemListContainer/ItemListContainer"
 
 const CategoriesPage = () => {

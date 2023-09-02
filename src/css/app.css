@@ -26,3 +26,30 @@
     font-weight: bold;
     margin: auto;
 }
+
+.alert-checkout-container {
+    max-width: 80%;
+    margin: auto;
+    margin-top: 15%;
+    height: 100%;
+}
+
+.details-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.position-right {
+    text-align: right !important;
+}
+
+.position-center {
+    text-align: center !important;
+}
+
+.button-action-card {
+    width: 100%;
+}

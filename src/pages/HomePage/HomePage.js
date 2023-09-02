@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react"
-import { getProducts } from "../../asyncMock"
+import { getProducts } from "../../services/firebase"
 import ItemListConatainer from "../../components/ItemListContainer/ItemListContainer"
 
 const HomePage = () => {
